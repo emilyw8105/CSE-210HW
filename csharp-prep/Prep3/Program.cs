@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 
 class Program
 {
@@ -7,11 +8,13 @@ class Program
         
         int Guess_Number = 0;
 
+        //First step for prep 3: ask user for magic number
         //Console.Write("What is the magic number? ");
         //Magic_Number = int.Parse(Console.ReadLine());
         Random Rando_Magic_Number = new Random();
         int Magic_Number = Rando_Magic_Number.Next(1 , 100);
 
+        //Loop for user to guess magic number
         while (Guess_Number != Magic_Number)
         {
 
