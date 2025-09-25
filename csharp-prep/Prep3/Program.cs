@@ -31,6 +31,10 @@ class Program
             {
                 Console.Write("You guessed it!");
             }
+            else
+            {
+                Console.Write("invalid input");
+            }
         }
     }
 }
