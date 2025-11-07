@@ -1,10 +1,10 @@
 using System.ComponentModel.DataAnnotations;
 
 public class Scripture
-{
+{   //define attributes
     public List<Word> _word = new List<Word>();
     private Reference _ref;
-
+    //Display method that print the scripture content
     public void Display()
     {
         Console.Write(_ref.GetReference());
@@ -16,7 +16,7 @@ public class Scripture
         }
         Console.WriteLine();
     }
-
+    //Hide words method that uses an index and iterates through the list to hide words
     public void HideWords(List<Word> _word, int size)
     {
         Random random = new Random();
@@ -30,12 +30,12 @@ public class Scripture
         }
 
     }
-
+    //method to tell when all the words are hidden
     public bool AllHidden()
     {
         return _word.All(w => w.IsHidden());
     }
-
+    //constructor that initializes the attributes
     public Scripture(List<Word> words, Reference reference)
     {
         _word = words;
