@@ -23,7 +23,7 @@ public void Reflect()
     while (DateTime.Now < endTime)
     {
         Console.WriteLine($"\n> {RandomQuestion()}");
-        Animator(5);
+        Animator(15);
     }
 
     End("Reflection");
